@@ -15,7 +15,8 @@ reset:
 	docker system prune -a -f && docker volume prune -f
 
 backup:
-	echo backup
+	docker exec sentry-self-hosted-postgres-1 /usr/bin/pg_dump -U postgres --clean postgres > backup.sql
 
 restore:
-	echo restore
+	docker cp backup.sql sentry-self-hosted-postgres-1:/tmp/backup.sql
+	docker exec sentry-self-hosted-postgres-1 psql -U postgres -d postgres -f /tmp/backup.sql
