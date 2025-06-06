@@ -9,7 +9,7 @@
 
 # mail.backend: 'smtp'  # Use dummy if you want to disable email entirely
 mail.host: 'smtp'
-mail.port: 25
+mail.port: 587
 mail.username: 'postmaster@sentry.bevyapps.com'
 mail.password: ''
 # NOTE: `mail.use-tls` and `mail.use-ssl` are mutually exclusive and should not
