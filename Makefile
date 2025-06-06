@@ -1,5 +1,6 @@
 .PHONY: install up down wipe reset backup restore
 install:
+	nano sentry/config.example.yml
 	./install.sh
 
 up:
