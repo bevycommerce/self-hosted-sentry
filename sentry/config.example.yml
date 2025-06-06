@@ -46,8 +46,8 @@ mail.list-namespace: 'sentry.bevyapps.com'
 ###################
 
 # The URL prefix in which Sentry is accessible
-# system.url-prefix: https://example.sentry.com
-system.internal-url-prefix: 'https://sentry.bevyapps.com'
+system.url-prefix: 'https://sentry.bevyapps.com'
+system.internal-url-prefix: 'http://localhost'
 
 # If this file ever becomes compromised, it's important to generate a new key.
 # Changing this value will result in all current sessions being invalidated.
