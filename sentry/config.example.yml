@@ -7,8 +7,8 @@
 # Mail Server #
 ###############
 
-# mail.backend: 'smtp'  # Use dummy if you want to disable email entirely
-mail.host: 'smtp'
+mail.backend: 'smtp'  # Use dummy if you want to disable email entirely
+mail.host: 'smtp.mailgun.org'
 mail.port: 587
 mail.username: 'postmaster@sentry.bevyapps.com'
 mail.password: ''
@@ -47,7 +47,7 @@ mail.list-namespace: 'sentry.bevyapps.com'
 
 # The URL prefix in which Sentry is accessible
 # system.url-prefix: https://example.sentry.com
-system.internal-url-prefix: 'http://web:9000'
+system.internal-url-prefix: 'https://sentry.bevyapps.com'
 
 # If this file ever becomes compromised, it's important to generate a new key.
 # Changing this value will result in all current sessions being invalidated.
